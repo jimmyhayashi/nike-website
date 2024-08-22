@@ -1,12 +1,20 @@
-import { CustomerReviews, Footer, Hero, PopularProducts, SpecialOffer, Subscribe, SuperQuality, Services } from "./sections"
+import {
+  CustomerReviews,
+  Footer,
+  Hero,
+  PopularProducts,
+  SpecialOffer,
+  Subscribe,
+  SuperQuality,
+  Services,
+} from "./sections";
 
-import Nav from "./components/Nav"
+import Nav from "./components/Nav";
 const App = () => {
-
   return (
     <main className="relative">
       <Nav />
-      <section className="xl:paading-1 wide:padding-r padding-b">
+      <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
       <section className="padding">
@@ -31,7 +39,7 @@ const App = () => {
         <Footer />
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;
