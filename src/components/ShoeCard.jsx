@@ -1,5 +1,8 @@
+import PropTypes from "prop-types";
 const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
   const handleClick = () => {
+    console.log(imgURL);
+    console.log(bigShoeImg);
     if (bigShoeImg !== imgURL.bigShoe) {
       changeBigShoeImage(imgURL);
     }
@@ -24,6 +27,12 @@ const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
       </div>
     </div>
   );
+};
+
+ShoeCard.propTypes = {
+  imgURL: PropTypes.object,
+  changeBigShoeImage: PropTypes.func,
+  bigShoeImg: PropTypes.string,
 };
 
 export default ShoeCard;
